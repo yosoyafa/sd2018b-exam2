@@ -1,7 +1,7 @@
 ### Examen 2 
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
-**Docente:** Carlos Andrés Afanador Cabal   
+**Docente:** Carlos Andrés Afanador Cabal :colombia:   
 **Tema:** Construcción de artefactos para entrega continua   
 **Correo:** carlosafanador97 at gmail.com
 

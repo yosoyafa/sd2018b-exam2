@@ -2,7 +2,7 @@
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
 **Docente:** Carlos Andrés Afanador Cabal :colombia:   
-**Tema:** Construcción de artefactos para entrega continua   
+**Tema:** Construcción de artefactos para entrega continua.   
 **Correo:** carlosafanador97 at gmail.com
 
 ### Objetivos
@@ -196,7 +196,14 @@ Por último, al entrar a la rama *develop* se evidencia la presencia de los arch
   
 
 #### Dificultades
-
+Tuve difocultad en entender las tecnologias usadas durante el desarrollo y la forma en que se podían entrelazar y poner a trabajar en conjunto.
+  
+#### Referencias
+* https://hub.docker.com/_/registry/  
+* https://hub.docker.com/_/docker/
+* https://developer.github.com/v3/guides/building-a-ci-server/
+* https://www.learnitguide.net/2018/07/create-your-own-private-docker-registry.html
+* https://docs.docker.com/compose/install/
 
 [1]: images/llaves.png
 [2]: images/api1.png

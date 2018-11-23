@@ -167,16 +167,16 @@ connexion run gm_analytics/swagger/indexer.yaml --debug -p 8080
 ```
 Al ejecutarse el script, se genera la siguiente salida:  
 
-![][2]  
-![][3]  
+![][4]  
+![][5]  
 Teniendo 
 
 
 
 [1]: images/llaves.png
-[3]: images/build1.png
-[4]: images/build2.png
-[5]: images/ngrokstatus.png
-[6]: images/webhook.png
-[7]: images/200cli.png
-[8]: images/200ngrok.png
+[4]: images/build1.png
+[5]: images/build2.png
+[6]: images/ngrokstatus.png
+[7]: images/webhook.png
+[8]: images/200cli.png
+[9]: images/200ngrok.png

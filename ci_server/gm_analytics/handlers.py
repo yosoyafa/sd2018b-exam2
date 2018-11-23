@@ -17,7 +17,7 @@ def repository_changed():
     branch_merged = json_pullrequest["pull_request"]["merged"]
     if branch_merged:
         pullrequest_sha  = json_pullrequest["pull_request"]["head"]["sha"]
-        json_image_url     = "https://raw.githubusercontent.com/MasterKr123/sd2018b-exam2/" + pullrequest_sha + "/images.json"
+        json_image_url     = "https://raw.githubusercontent.com/yosoyafa/sd2018b-exam2/" + pullrequest_sha + "/images.json"
         response_image_url = requests.get(json_image_url)
         image_data    =  json.loads(response_image_url.content)
         for service in image_data:
@@ -25,7 +25,7 @@ def repository_changed():
             image_type = service["type"]
             image_version = service["version"]
             if image_type == 'Docker':
-                dockerfile_image_url = "https://raw.githubusercontent.com/MasterKr123/sd2018b-exam2/" + pullrequest_sha + "/" + service_name + "/Dockerfile"
+                dockerfile_image_url = "https://raw.githubusercontent.com/yosoyafa/sd2018b-exam2/" + pullrequest_sha + "/" + service_name + "/Dockerfile"
                 file_response = requests.get(dockerfile_image_url)
                 file = open("Dockerfile","w")
                 file.write(str(file_response.content, 'utf-8'))
@@ -41,4 +41,4 @@ def repository_changed():
         out = {'cammand return' : result_swagger}
     else:
         out= {'command_return': 'Pull request was not merged'}
-return out
+        return out

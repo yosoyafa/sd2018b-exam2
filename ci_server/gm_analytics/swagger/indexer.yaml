@@ -3,7 +3,7 @@ info:
   title: User API
   version: "0.1.0"
 paths:
-  /ciserver/develop/changed:
+  /ciserver/updates:
     post:
       x-swagger-router-controller: gm_analytics
       operationId: handlers.repository_changed
@@ -30,4 +30,4 @@ paths:
             properties:
               command_return:
                 type: string
-description: The information is procesing
+                description: The information is procesing

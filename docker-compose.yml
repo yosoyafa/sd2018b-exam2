@@ -1,4 +1,3 @@
-
 version: '3'
 services:
     registry:
@@ -14,8 +13,8 @@ services:
         ports:
             - '443:443'
     ci_server:
-        build: CI_Server
-        container_name: CI_Server
+        build: ci_server
+        container_name: ci_server
         volumes:
           - //var/run/docker.sock:/var/run/docker.sock
         environment:
@@ -29,4 +28,4 @@ services:
         links:
           - ci_server
         environment:
-NGROK_PORT: ci_server:8080
+          NGROK_PORT: ci_server:8080

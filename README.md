@@ -112,8 +112,9 @@ paths:
 description: The information is procesing
 ```
 A continuación estan los endpoints definidos en el API:
-![][2]
-![][3]
+![][2]  
+![][3]  
+  
 El proceso gobernado por el API se ve expresado a través de un método de python3.6 que recibe y analiza los *pull requests* hechos al repositorio, y decide si hace la integración o no. 
 ```python
 import os
@@ -172,8 +173,17 @@ Al ejecutarse el script, se genera la siguiente salida:
 
 ![][4]  
 ![][5]  
-Teniendo 
 
+Teniendo ya el servidor de integración listo y expuesto a internet, al ingresar a la vista web se ve el estado del servicio **ngrok**:
+![][6]  
+
+De ahí se obtiene el URL que se adhiere al webhook del repositorio:
+
+![][7]  
+
+Al realizar el *pull request* a la rama *develop*, con el servicio a instalar, se evidencia el funcionamiento del servidor en la vista web de éste, y también en CLI:  
+![][8]  
+![][9]  
 
 
 [1]: images/llaves.png

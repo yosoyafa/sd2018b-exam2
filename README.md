@@ -1,7 +1,7 @@
 ### Examen 2 
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
-**Docente:** Carlos Andrés Afanador Cabal :colombia:   
+**Docente:** Carlos Andrés Afanador Cabal   
 **Tema:** Construcción de artefactos para entrega continua   
 **Correo:** carlosafanador97 at gmail.com
 
@@ -158,16 +158,25 @@ def repository_changed():
         out= {'command_return': 'Pull request was not merged'}
 return out
 ```
-Para ejecutar t
+Al levantarse el contenedor que aloja los servicios descritos, se ejecuto el script *deploy.sh*, que automaticamente despliega los servicios y deja listo el servidor de integración:
 
+```bash
+export PYTHONPATH=$PYTHONPATH:`pwd`
+export FLASK_ENV=development
+connexion run gm_analytics/swagger/indexer.yaml --debug -p 8080
+```
+Al ejecutarse el script, se genera la siguiente salida:  
 
+![][2]  
+![][3]  
+Teniendo 
 
 
 
 [1]: images/llaves.png
-[2]: images/build1.png
-[3]: images/build2.png
-[4]: images/ngrokstatus.png
-[5]: images/webhook.png
-[6]: images/200cli.png
-[7]: images/200ngrok.png
+[3]: images/build1.png
+[4]: images/build2.png
+[5]: images/ngrokstatus.png
+[6]: images/webhook.png
+[7]: images/200cli.png
+[8]: images/200ngrok.png

@@ -111,6 +111,9 @@ paths:
                 type: string
 description: The information is procesing
 ```
+A continuación estan los endpoints definidos en el API:
+![][2]
+![][3]
 El proceso gobernado por el API se ve expresado a través de un método de python3.6 que recibe y analiza los *pull requests* hechos al repositorio, y decide si hace la integración o no. 
 ```python
 import os
@@ -174,6 +177,8 @@ Teniendo
 
 
 [1]: images/llaves.png
+[2]: images/api1.png
+[3]: images/api2.png
 [4]: images/build1.png
 [5]: images/build2.png
 [6]: images/ngrokstatus.png

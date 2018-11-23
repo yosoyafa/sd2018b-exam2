@@ -2,7 +2,7 @@
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
 **Docente:** Carlos Andrés Afanador Cabal :colombia:   
-**Tema:** Construcción de artefactos para entrega continua.   
+**Tema:** Construcción de artefactos para entrega continua   
 **Correo:** carlosafanador97 at gmail.com
 
 ### Objetivos
@@ -187,7 +187,11 @@ Al realizar el *pull request* a la rama *develop*, con el servicio a instalar, s
   
 Por último, al entrar a la rama *develop* se evidencia la presencia de los archivos que se encontraban en la rama desde la cual se le hico el *merge*:  
   
-  ![][10] 
+
+| Rama *cafanador/develop*  | Rama *develop* |
+| ------------- | ------------- |
+|    ![][10]  |   ![][11]  |
+
   
   
 
@@ -203,4 +207,5 @@ Por último, al entrar a la rama *develop* se evidencia la presencia de los arch
 [7]: images/webhook.png
 [8]: images/200cli.png
 [9]: images/200ngrok.png
-[10]: images/develop.png
+[10]: images/cafadev.png
+[11]: images/dev.png

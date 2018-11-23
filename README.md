@@ -2,7 +2,7 @@
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
 **Docente:** Carlos Andrés Afanador Cabal :colombia:   
-**Tema:** Construcción de artefactos para entrega continua   
+**Tema:** Construcción de artefactos para entrega continua.   
 **Correo:** carlosafanador97 at gmail.com
 
 ### Objetivos
@@ -12,7 +12,6 @@
 
 ### Desarrollo
 
-#### Registry  
 Para tener un control centralizado propio de las imagenes de Docker a usar en nuestros clientes de Docker, se crea un Docker Registry privado. En primera instancia, en la carpeta *docker_data/certs* se crean certificados para darle seguridad al sistema, de la sigueinte forma:
 ```
 $ mkdir docker_data
@@ -181,9 +180,18 @@ De ahí se obtiene el URL que se adhiere al webhook del repositorio:
 
 ![][7]  
 
-Al realizar el *pull request* a la rama *develop*, con el servicio a instalar, se evidencia el funcionamiento del servidor en la vista web de éste, y también en CLI:  
+Al realizar el *pull request* a la rama *develop*, con el servicio a instalar, se evidencia el funcionamiento del servidor en la vista web de éste, y también en CLI, donde se obtiene el codigo **200 OK**:  
+  
 ![][8]  
 ![][9]  
+  
+Por último, al entrar a la rama *develop* se evidencia la presencia de los archivos que se encontraban en la rama desde la cual se le hico el *merge*:  
+  
+  ![][10] 
+  
+  
+
+#### Dificultades
 
 
 [1]: images/llaves.png
@@ -195,3 +203,4 @@ Al realizar el *pull request* a la rama *develop*, con el servicio a instalar, s
 [7]: images/webhook.png
 [8]: images/200cli.png
 [9]: images/200ngrok.png
+[10]: images/develop.png

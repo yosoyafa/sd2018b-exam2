@@ -23,6 +23,21 @@ $ sudo openssl req -newkey rsa:4096 -nodes -sha256 -keyout `pwd`/docker_data/cer
 ```
 Este proceso arrojará la siguiente salida:
 
-**llaves.png**
+![][1]
 
 A continuación
+
+
+
+
+
+
+
+
+[1]: images/llaves.png
+[2]: images/build1.png
+[3]: images/build2.png
+[4]: images/ngrokstatus.png
+[5]: images/webhook.png
+[6]: images/200cli.png
+[7]: images/200ngrok.png
